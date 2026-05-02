@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Xiangshan High School Overseas Alumni</title>
+
+<style>
+body { font-family: Arial; margin: 0; background: #f5f5f5; }
+header { background: #003366; color: white; padding: 20px; text-align: center; }
+section { background: white; margin: 20px; padding: 20px; border-radius: 10px; }
+button { margin: 5px; padding: 8px 12px; }
+</style>
+
+<script>
+function setLang(lang) {
+    document.querySelectorAll("[data-zh]").forEach(el => {
+        el.innerText = el.getAttribute("data-" + lang);
+    });
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1 data-zh="香山中学海外校友会" data-en="Xiangshan High School Overseas Alumni"></h1>
+    <p data-zh="连接全球校友" data-en="Connecting Alumni Worldwide"></p>
+    
+    <button onclick="setLang('zh')">中文</button>
+    <button onclick="setLang('en')">English</button>
+</header>
+
+<section>
+    <h2 data-zh="关于我们" data-en="About Us"></h2>
+    <p data-zh="这是香山中学海外校友交流平台。" 
+       data-en="This is a platform for Xiangshan High School alumni worldwide."></p>
+</section>
+
+<section>
+    <h2 data-zh="加入我们" data-en="Join Us"></h2>
+    <p data-zh="扫描二维码加入校友群" 
+       data-en="Scan QR code to join the alumni group"></p>
+    <img src="qrcode.png" width="200">
+</section>
+
+<section>
+    <h2 data-zh="活动" data-en="Events"></h2>
+    <ul>
+        <li data-zh="纽约线下聚会" data-en="NYC Meetup"></li>
+        <li data-zh="线上职业分享" data-en="Online Career Talk"></li>
+    </ul>
+</section>
+
+</body>
+</html>
